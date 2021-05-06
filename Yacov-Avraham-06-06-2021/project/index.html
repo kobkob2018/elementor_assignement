@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Elementor test by Yacov Avraham</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">   
+    <link rel="stylesheet" href="assets/css/loader.css"> 
+    <!-- Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+  </head>
+  <body>
+    <div id="overlay-root">
+        <div id="popup_box" class="hide">
+            <div id="popup_backdrop" onClick="toggle_popup()"></div>
+            <div id="popup_content">
+                <div id="popup_place_holder">
+
+                </div>
+				<div class="controlls hidden" id="purchase_controlls">
+					<button type = "button" class = "success" onClick="add_to_cart(this)">Add to cart</button>
+					<button type = "button" class = "danger" onClick="toggle_popup()">cancel</button>					
+				</div>
+				<div class="controlls hidden" id="error_controlls" >
+					<button type = "button" class = "danger" onClick="toggle_popup()">Got it...</button>					
+				</div>
+            </div> 
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1>See our beautyfull products</h1>
+			<h2>(with images borrowed from unsplash.com)</h2>
+			<p>
+				Welcome to my home assignment from Elementor team. My name is Yacov Avraham, and I would love to develope for the world's lead web page editor!!!
+			</p>
+        </div>
+    </header>
+            
+    <section class="products">
+            <div class="product" id="product_1">
+				<div class="product-info"> 
+					<div class="product-img">
+						<img src="assets/images/products/product_1.jpg" alt="smart watch"/>
+					</div>
+					<h3>A very very smart watch!!!</h3>
+				</div>
+                <div class="controlls">
+                    <button type="button" onClick="purchase_product(1)" >Buy now</button>
+                </div>
+			</div>
+            <div class="product" id="product_2">
+				<div class="product-info"> 
+					<div class="product-img">
+						<img src="assets/images/products/product_2.jpg" alt="ray-bun"/>
+					</div>
+					<h3>Original "ray-bun" sun glasses</h3>
+				</div>
+                <div class="controlls">
+                    <button type="button" onClick="purchase_product(2)" >Buy now</button>
+                </div>
+			</div>
+            <div class="product" id="product_3">
+				<div class="product-info"> 
+					<div class="product-img">
+						<img src="assets/images/products/product_3.jpg" alt="A beautyfull shue" />
+					</div>
+					<h3>A beautyfull shue</h3>
+				</div>
+                <div class="controlls">
+                    <button type="button" onClick="purchase_product(3)" >Buy now</button>
+                </div>
+			</div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          All images were taken from unsplesh.com, and used for demonstration only
+        </div>
+      </div>
+    </footer>    
+    </body>
+</html>
